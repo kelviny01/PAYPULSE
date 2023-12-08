@@ -1,0 +1,923 @@
+/* ===================== RESET CSS ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+/* ===================== UTILITYS CLASSES ===================== */
+a.active-blue {
+  padding: 1.4rem 2.9rem;
+  background-color: var(--color-blue);
+  border-radius: 0.4rem;
+  color: var(--color-white-900) !important;
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+a.active-white {
+  padding: 1.4rem 2.9rem;
+  background-color: var(--color-white-900);
+  border-radius: 0.4rem;
+  color: var(--color-black-gray);
+  font-weight: 600;
+  font-size: 1.6rem;
+  display: inline-block;
+}
+
+/* ===================== VARIABLES COLORS ===================== */
+:root {
+  --color-blue: #4759f9;
+  --color-yellow-50: #fffaf3;
+  --color-yellow-100: #ffe4be;
+  --color-yellow-700: #feae37;
+  --color-green-50: #effbf7;
+  --color-green-100: #d1f1e6;
+  --color-gray-100: #dadeff;
+  --color-gray-200: #dcdfff;
+  --color-gray-500: #454c5d;
+  --color-black-gray: #1d1e25;
+  --color-white-100: #f4f5ff;
+  --color-white-900: #fff;
+}
+
+/* ===================== CSS HEADER NAVIGATION ===================== */
+.header {
+  padding: 0 8rem;
+}
+
+.header-container {
+  max-width: 144rem;
+  margin: auto;
+}
+
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  border-bottom: 1px solid var(--color-gray-200);
+  padding: 2.9rem 0;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.1rem;
+}
+
+.header-logo strong {
+  color: var(--color-black-gray);
+  font-size: 2.9rem;
+}
+
+.header-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.4rem;
+}
+
+.header-navigation ul li a {
+  color: var(--color-black-gray);
+}
+
+.header-navigation ul li.btn-download {
+  padding-left: 0.8rem;
+}
+
+/* .header-navigation ul li a.active-blue {
+  padding: 1.4rem 2.9rem;
+  background-color: var(--color-blue);
+  border-radius: 0.4rem;
+  color: var(--color-white-900);
+  font-weight: 600;
+} */
+
+/* .header-navigation ul li a.active-white {
+  padding: 1.4rem 2.9rem;
+  background-color: var(--color-white-900);
+  border-radius: 0.4rem;
+  color: var(--color-black-gray);
+  font-weight: 600;
+} */
+
+/* ===================== CSS HEADER BANNER ===================== */
+.header-banner {
+  background-image: url("../image/background-mesh-gradient.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 11.2rem;
+}
+
+.header-bannerContentLeft {
+  max-width: 40%;
+}
+
+.header-bannerContentLeft p {
+  color: var(--color-gray-500);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+}
+
+.header-bannerContentLeft p > span {
+  background-color: var(--color-yellow-700);
+  border-radius: 1rem;
+  padding: 0.4rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 2.2rem;
+  color: var(--color-white-900);
+}
+
+.header-bannerContentLeft h1 {
+  font-size: 6.4rem;
+  font-weight: 800;
+  line-height: 7rem;
+  text-transform: capitalize;
+  margin: 4rem 0 5.6rem 0;
+}
+
+.header-bannerContentLeft h1 > span {
+  color: var(--color-blue);
+}
+
+.header-bannerContentLeft h1 + p {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+  margin-bottom: 4rem;
+}
+
+.header-bannerDownloadApp {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.header-bannerContentRight img {
+  width: 45.4rem;
+  height: 87.5rem;
+}
+
+/* ===================== CSS SECTION ABOUT ===================== */
+.about {
+  max-width: 144rem;
+  margin: 11.2rem auto;
+}
+
+.about-containerCards {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 60rem);
+  gap: 2rem;
+}
+
+.about-containerCards .about-cardPayment > .about-iconBox {
+  background-color: var(--color-gray-100);
+}
+
+.about-containerCards > .about-cardTansaction .about-iconBox {
+  background-color: var(--color-yellow-100);
+}
+
+.about-containerCards > .about-cardSecure .about-iconBox {
+  background-color: var(--color-green-100);
+}
+
+.about-containerCards > .about-cardInfosText {
+  padding: 1.6rem 3.2rem;
+}
+
+.about-containerCards > article:not(.about-cardInfosText) {
+  border-radius: 1.7rem;
+}
+
+.about-containerCards > .about-cardPayment {
+  background-color: var(--color-white-100);
+}
+
+.about-containerCards > .about-cardTansaction {
+  background-color: var(--color-yellow-50);
+}
+
+.about-containerCards > .about-cardSecure {
+  background-color: var(--color-green-50);
+}
+
+.about-containerCards > .about-cardInfosText > .about-title h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  color: var(--color-black-gray);
+}
+
+.about-containerCards > .about-cardInfosText > .about-description {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-gray-500);
+  margin: 4rem 0;
+}
+
+.about-containerCards .cardIcon {
+  padding: 7.2rem 6.4rem;
+}
+
+.about-containerCards .cardIcon > .about-iconBox {
+  width: 12.8rem;
+  height: 12.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+.about-containerCards .cardIcon > .about-title h3 {
+  margin: 1.6rem 0;
+  font-size: 3.6rem;
+  font-weight: 700;
+  line-height: 4rem;
+  letter-spacing: -0.1rem;
+  color: var(--color-black-gray);
+}
+
+.about-containerCards .cardIcon > .about-description p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--color-gray-500);
+}
+
+/* ===================== CSS SECTION FEATURES ===================== */
+.features {
+  max-width: 144rem;
+  margin: auto;
+  margin-top: 11.2rem;
+}
+
+.features-containerTitle {
+  text-align: center;
+}
+
+.features-containerTitle .features-title {
+  color: var(--color-black-gray);
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+}
+
+.features-containerTitle .features-subtitle {
+  color: var(--color-gray-500);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  max-width: 63rem;
+  margin: 4rem auto;
+}
+
+.features-containerInfosApp {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4.8rem;
+  position: relative;
+}
+
+.features-paypulseApp,
+.features-otherApps {
+  width: 41.9rem;
+  height: auto;
+}
+
+.features-containerInfosApp .vs {
+  width: 7.9rem;
+  height: 7.9rem;
+  border-radius: 50%;
+  background-color: var(--color-yellow-700);
+  color: var(--color-white-900);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 700;
+  position: absolute;
+  top: 25rem;
+}
+
+.features-paypulseApp h3,
+.features-otherApps h3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--color-black-gray);
+}
+
+.features-paypulseApp ul,
+.features-otherApps ul {
+  margin-top: 3.2rem;
+  padding: 4.8rem 5.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.features-paypulseApp ul {
+  background-color: var(--color-blue);
+  color: var(--color-white-900);
+}
+
+.features-otherApps ul {
+  background-color: var(--color-white-900);
+  box-shadow: 0px 5px 18px 0px rgba(0, 0, 0, 0.07);
+}
+
+.features-paypulseApp ul strong,
+.features-otherApps ul strong {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+  line-height: 3.2rem;
+}
+
+.features-otherApps ul strong > span {
+  text-transform: lowercase;
+}
+
+.features-paypulseApp ul li,
+.features-otherApps ul li {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+/* ===================== CSS SECTION BENEFITS ===================== */
+.benefits {
+  background-color: var(--color-white-100);
+}
+
+.benefits-container {
+  max-width: 144rem;
+  margin: auto;
+  margin-top: 11.2rem;
+  padding: 11.2rem 0;
+}
+
+.benefits-container > h2,
+.benefits-container > p {
+  text-align: center;
+}
+
+.benefits-container > h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+}
+
+.benefits-container > p {
+  margin-top: 4rem;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--color-gray-500);
+}
+
+.benefits-containerCards {
+  margin-top: 7.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.benefits-containerCards > .benefits-card {
+  width: 30.1rem;
+  height: auto;
+  padding: 3.2rem;
+  background-color: var(--color-white-900);
+  border-radius: 0.8rem;
+}
+
+.benefits-card > .benefits-iconCard {
+  width: 6.4rem;
+  height: 6.4rem;
+  border-radius: 0.8rem;
+  background-color: var(--color-white-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits-card > h3 {
+  color: var(--color-blue);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 3.2rem;
+  margin: 2.4rem 0 1.6rem 0;
+}
+
+.benefits-card > p {
+  color: var(--color-blue);
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+}
+
+/* ===================== CSS SECTION CTA ===================== */
+.cta {
+  background-color: var(--color-blue);
+}
+
+.cta-container {
+  max-width: 144rem;
+  margin: auto;
+  padding: 4rem 2.4rem 0 2.4rem;
+  background-image: url("../image/bg-elemnets-1.svg");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cta-contentRightInfos {
+  max-width: 40%;
+}
+
+.cta-contentRightInfos h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  color: var(--color-white-900);
+}
+
+.cta-contentRightInfos p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-top: 2.4rem;
+  color: var(--color-white-900);
+}
+
+.cta-contentRightInfos > .cta-users {
+  margin: 4rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.cta-contentRightInfos > .cta-users span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-white-900);
+}
+
+/* ===================== CSS SECTION TESTIMONIAL ===================== */
+.testimonial {
+  max-width: 144rem;
+  margin: auto;
+}
+
+.testimonial h2,
+.testimonial p {
+  padding-inline-end: 6rem;
+  text-align: right;
+}
+
+.testimonial h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  color: var(--color-black-gray);
+  text-transform: capitalize;
+  transform: translateY(11.2rem);
+  margin-bottom: 2.4rem;
+}
+
+.testimonial p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--color-gray-500);
+  transform: translateY(11.2rem);
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-contentLeftInfos {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 14rem;
+  max-width: 50%;
+  padding: 14rem 8rem;
+}
+
+.testimonial-contentLeftInfos img {
+  margin-bottom: 2rem;
+}
+
+.testimonial-contentLeftInfos > .testimonial-contentSlider {
+  position: relative;
+}
+
+.testimonial-contentLeftInfos > .testimonial-contentSlider h3:nth-of-type(1),
+.testimonial-contentLeftInfos > .testimonial-contentSlider h3:nth-of-type(2),
+.testimonial-contentLeftInfos > .testimonial-contentSlider h3:nth-of-type(3),
+.testimonial-contentLeftInfos > .testimonial-contentSlider h3:nth-of-type(4),
+.testimonial-contentLeftInfos > .testimonial-contentSlider h3:nth-of-type(5) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 800ms;
+  text-wrap: nowrap;
+  transform: translateY(-12rem);
+}
+
+.testimonial-contentLeftInfos > .testimonial-contentSlider h3.selected {
+  opacity: 1;
+}
+
+.testimonial-contentLeftInfos h3 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 5.2rem;
+  letter-spacing: -0.8;
+  color: var(--color-black-gray);
+}
+
+.testimonial-contentLeftInfos > .testimonial-namePeople {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+}
+
+.testimonial-contentLeftInfos > .testimonial-namePeople strong {
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 3.2rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-black-gray);
+}
+
+.testimonial-contentLeftInfos > .testimonial-namePeople span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-gray-500);
+}
+
+.testimonial-contentLeftInfos > .testimonial-carousel {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  margin-top: -10rem;
+}
+
+.testimonial-contentLeftInfos > .testimonial-carousel div.ball {
+  width: 1.4rem;
+  height: 1.4rem;
+  background-color: var(--color-gray-200);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.testimonial-contentLeftInfos > .testimonial-carousel div.ball-active {
+  background-color: var(--color-blue);
+}
+
+/* ===================== CSS SECTION FAQ ===================== */
+.faq {
+  background-color: var(--color-white-100);
+}
+
+.faq-container {
+  max-width: 144rem;
+  margin: auto;
+  padding: 11.2rem;
+}
+
+.faq-container > h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  color: var(--color-black-gray);
+}
+
+.faq-accordionMenu {
+  margin-top: 7.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.faq-accordionItem {
+  border-bottom: 1px solid var(--color-gray-200);
+  padding-bottom: 3.2rem;
+}
+
+.faq-accordionItem > .faq-accordionHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.faq-accordionHeader > strong {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--color-black-gray);
+  padding-bottom: 1.2rem;
+}
+
+.faq-accordionHeader > strong.faq-active {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+  color: var(--color-blue);
+  padding-bottom: 1.2rem;
+}
+
+.faq-accordionHeader > .faq-accordionIcon {
+  cursor: pointer;
+  width: 4rem;
+  height: 4rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  background-color: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.faq-accordionHeader > .faq-accordionIcon {
+  fill: #fff;
+}
+
+.faq-accordionContent {
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.faq-accordionContent > p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-gray-500);
+  max-width: 50%;
+}
+
+/* ===================== CSS SECTION ABOUT ===================== */
+.blog-container {
+  max-width: 144rem;
+  margin: auto;
+  padding: 11.2rem 0;
+}
+
+.blog-container h2 {
+  font-size: 5.6rem;
+  font-weight: 700;
+  line-height: 6.5rem;
+  color: var(--color-black-gray);
+  max-width: 63rem;
+  margin: auto;
+  text-align: center;
+}
+
+.blog-container > p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  color: var(--color-gray-500);
+  text-align: center;
+  padding: 4rem 0 7.2rem 0;
+}
+
+.blog-containerCards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.blog-containerCards > .blog-card {
+  background-color: var(--color-white-900);
+  box-shadow: 2px 4px 27px 0px rgba(0, 0, 0, 0.06);
+  border-radius: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 3.2rem;
+  max-width: 63rem;
+}
+
+.blog-containerCards > .blog-card img {
+  border-radius: 1.6rem;
+}
+
+.blog-containerCards > .blog-card strong {
+  font-size: 3rem;
+  line-height: 4rem;
+  letter-spacing: -0.1rem;
+  color: var(--color-black-gray);
+  padding: 3.2rem 0 2.4rem 0;
+}
+
+.blog-containerCards > .blog-card strong span {
+  color: var(--color-yellow-700);
+}
+
+.blog-containerCards > .blog-card p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-gray-500);
+}
+
+.blog-containerCards > .blog-card p a {
+  color: var(--color-blue);
+}
+
+/* ===================== CSS FOOTER ===================== */
+.footer {
+  background-color: var(--color-blue);
+  margin-top: 16.2rem;
+}
+
+.footer-container {
+  position: relative;
+  max-width: 144rem;
+  margin: auto;
+  padding: 25.6rem 2.4rem 3.2rem 2.4rem;
+}
+
+.footer-retangle {
+  max-width: 128rem;
+  min-height: 33.7rem;
+  background-color: var(--color-yellow-700);
+  background-image: url("../image/BG\ Shape.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  border-radius: 3.2rem;
+  padding: 4rem;
+  position: absolute;
+  top: -17rem;
+  left: 8rem;
+  display: flex;
+  align-items: center;
+}
+
+.footer-retangleContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.footer-retangleContentLeft {
+  max-width: 50%;
+}
+
+.footer-retangleContentLeft h2 {
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 4rem;
+  color: var(--color-white-900);
+  padding-bottom: 2.4rem;
+}
+
+.footer-retangleContentLeft p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  color: var(--color-white-900);
+}
+
+.footer-retangleContentRight {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.footer-logo strong {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--color-white-900);
+}
+
+.footer-navigation {
+  margin: 4rem 0;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--color-white-900);
+  width: 100%;
+}
+
+.footer-navigation ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+.footer-navigation ul li a {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2rem;
+  color: var(--color-white-900);
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.footer-copyright span {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-white-900);
+}
+
+.footer-copyright > .footer-links {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.footer-links a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 2rem;
+  color: var(--color-white-900);
+}
+
+.footer-copyright > .footer-socialMediaLinks {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+
+.footer-socialMediaLinks a {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  padding: 0.8rem;
+  background: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.footer-socialMediaLinks div img {
+  color: red;
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- ICONS -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="image/logo.svg">
+    <!-- LINK FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- LINK CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/mobileAndTablet.css">
+    <title>PayPulse</title>
+</head>
+<body>
+    
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header-container">
+            <section class="header-navbar">
+                <div class="header-logo">
+                    <img src="image/logo.svg" alt="">
+                    <strong>PayPulse</strong>
+                </div>
+                <nav class="header-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Benfits</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">News</a>
+                        </li>
+                        <li class="btn-download">
+                            <a href="#" class="active-blue">Download App</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="header-menuIcon">
+                    <div onclick="openMenu()" class="menuOpen">
+                        <img src="image/Mobile-toggle.svg" alt="">
+                    </div>
+                    <nav class="header-navigationMobile">
+                        <div onclick="closeMenu()" class="closeMenu">
+                            <img src="image/closeMenu.svg" alt="">
+                        </div>
+                        <ul>
+                            <li>
+                                <a href="#">Features</a>
+                            </li>
+                            <li>
+                                <a href="#">Benfits</a>
+                            </li>
+                            <li>
+                                <a href="#">Testimonial</a>
+                            </li>
+                            <li>
+                                <a href="#">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="#">News</a>
+                            </li>
+                            <li class="btn-download">
+                                <a href="#" class="active-blue">Download App</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+            <section class="header-banner">
+                <div class="header-bannerContentLeft">
+                    <p><span>New</span> Download and enjoy!</p>
+                    <h1>the <span>easiest</span> way to send money safely to anywhere</h1>
+                    <p>Send your money to everywhere in the world in less a minute! Download the app now!</p>
+                    <div class="header-bannerDownloadApp">
+                        <a href="#">
+                            <img src="image/AppStore.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="image/PlayStore.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="header-bannerContentRight">
+                    <img src="image/bgImageHeader.png" alt="">
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <!-- SECTION ABOUT -->
+    <section class="about">
+        <div class="about-containerCards">
+            <article class="about-cardPayment cardIcon">
+                <div class="about-iconBox">
+                    <img src="image/iconStrongbox.svg" alt="Imagem de um porco cofrinho">
+                </div>
+                <div class="about-title">
+                    <h3>Worldwide Payment</h3>
+                </div>
+                <div class="about-description">
+                    <p>Worldwide Payment require an operational approach and problem-solving methodology that is specifically tailored to drive improvements to the system.</p>
+                </div>
+            </article>
+            <article class="about-cardInfosText">
+                <div class="about-title">
+                    <h2>Some distinguishing features that set PayPulse apart from others.</h2>
+                </div>
+                <div class="about-description">
+                    <p>Exceptional Attributes that Differentiate PayPulse from Competitors</p>
+                </div>
+                <a href="#" class="active-blue">Download App</a>
+            </article>
+            <article class="about-cardTansaction cardIcon">
+                <div class="about-iconBox">
+                    <img src="image/iconCash.svg" alt="Imagem de uma pilha de moedas">
+                </div>
+                <div class="about-title">
+                    <h3>Transaction fee is free!</h3>
+                </div>
+                <div class="about-description">
+                    <p>Unlock cost-free transactions on our money sending app! Experience the ease of sending money without any fees. Enjoy seamless financial transactions, where your money stays yours.</p>
+                </div>
+            </article>
+            <article class="about-cardSecure cardIcon">
+                <div class="about-iconBox">
+                    <img src="image/iconLocked.svg" alt="Imagem de um cadeado aberto">
+                </div>
+                <div class="about-title">
+                    <h3>Secure Transaction</h3>
+                </div>
+                <div class="about-description">
+                    <p>Safeguard your sunny transactions with our Secure Transfer feature. Enjoy swift and secure money sending that keeps your financial rays shining bright.</p>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- SECTION FEATURES -->
+    <section class="features">
+        <div class="features-containerTitle">
+            <h2 class="features-title">Why PayPulse?</h2>
+            <p class="features-subtitle">Voilinta is fully reserved. Unlike banks, we don’t loan out your money. We publish our holdings and obligations in real time.</p>
+        </div>
+        <div class="features-containerInfosApp">
+            <div class="features-paypulseApp">
+                <h3>
+                    <img src="image/logo.svg" alt="">
+                    PayPulse
+                </h3>
+                <ul>
+                    <strong>features included:</strong>
+                    <li>
+                        <img src="image/icon-check.svg" alt="">
+                        No hidden fees. No surprises
+                    </li>
+                    <li>
+                        <img src="image/icon-check.svg" alt="">
+                        Manage taxes, automatically
+                    </li>
+                    <li>
+                        <img src="image/icon-check.svg" alt="">
+                        Supports 190+ countries
+                    </li>
+                    <li>
+                        <img src="image/icon-check.svg" alt="">
+                        Provides 24/7 live support
+                    </li>
+                    <li>
+                        <img src="image/icon-check.svg" alt="">
+                        Works with the real exchange rate
+                    </li>
+                    <li>
+                        <img src="image/icon-check.svg" alt="">
+                        Integrates seamlessly
+                    </li>
+                </ul>  
+            </div>
+
+            <div class="vs">
+                VS
+            </div>
+
+            <div class="features-otherApps">
+                <h3>
+                    Other Apps
+                </h3>
+                <ul>
+                    <strong>features <span>not</span> included:</strong>
+                    <li>
+                        <img src="image/icon-notCheck.svg" alt="">
+                        Complicated fee structure
+                    </li>
+                    <li>
+                        <img src="image/icon-notCheck.svg" alt="">
+                        Need a lot of manual tax management
+                    </li>
+                    <li>
+                        <img src="image/icon-notCheck.svg" alt="">
+                        Support 50-100 countries
+                    </li>
+                    <li>
+                        <img src="image/icon-notCheck.svg" alt="">
+                        Have poor support and weekends off
+                    </li>
+                    <li>
+                        <img src="image/icon-notCheck.svg" alt="">
+                        Use unfair, higher exchange rates
+                    </li>
+                    <li>
+                        <img src="image/icon-notCheck.svg" alt="">
+                        Have spotty integrations
+                    </li>
+                </ul>  
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION BENEFITS -->
+    <section class="benefits">
+        <div class="benefits-container">
+            <h2>Benefits & advantages</h2>
+            <p>We make it easy for users to use our platform, that's why we provide this benefit.</p>
+            <div class="benefits-containerCards">
+                <article class="benefits-card">
+                    <div class="benefits-iconCard">
+                        <img src="image/iconCloud.svg" alt="">
+                    </div>
+                    <h3>Cloud Drive</h3>
+                    <p>A safe electronic funds transfer (EFT) is a fast and convenient way to send and receive money online.</p>
+                </article>
+                <article class="benefits-card">
+                    <div class="benefits-iconCard">
+                        <img src="image/iconIdea.svg" alt="">
+                    </div>
+                    <h3>Payment Overview</h3>
+                    <p>In the Payment Overview window, you can query a payment & review status and its related high-level information.</p>
+                </article>
+                <article class="benefits-card">
+                    <div class="benefits-iconCard">
+                        <img src="image/iconRocket.svg" alt="">
+                    </div>
+                    <h3>Expertise Built</h3>
+                    <p>A process to build expertise. Expertise is the ability to call on a set of skills and knowledge in a given field</p>
+                </article>
+                <article class="benefits-card">
+                    <div class="benefits-iconCard">
+                        <img src="image/iconSearch.svg" alt="">
+                    </div>
+                    <h3>Convenient & Easy</h3>
+                    <p>Suitable or agreeable to the needs or purpose; well-suited with respect to facility or ease in use</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION CTA -->
+    <section class="cta">
+        <div class="cta-container">
+            <div class="cta-contentLeft">
+                <img src="image/bgCTA.png" alt="Imamgem de um app mobile">
+            </div>
+            <div class="cta-contentRightInfos">
+                <h2>Getting Paid is now easier!</h2>
+                <p>PayPulse is fully reserved. Unlike banks, we don’t loan out your money. We publish our holdings and obligations in real time.</p>
+                <div class="cta-users">
+                    <img src="image/users.png" alt="Imagem de usuários homens">
+                    <span>More than 10,000 people have tried</span>
+                </div>
+                <div class="cta-btnApp">
+                    <a href="#" class="active-white">Try Our App</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION TESTIMONIAL -->
+    <section class="testimonial">
+        <h2>real feedback from users</h2>
+        <p>We make it easy for users to use our platform, that's why we provide this benefit.</p>
+        <div class="testimonial-container">
+            <div class="testimonial-contentLeftInfos">
+                <img src="image/iconQuote.svg" alt="">
+                <div class="testimonial-contentSlider">
+                    <h3 class="selected">OMG! I cannot believe that I have <br>got a brand new app for <br>transferring money. It was super <br>easy to send and receive. <br>i love it soooo much!</h3>
+                    <h3>I rely on PayPulse daily. Its security <br>measures and convenient <br>features simplify <br>money transfers. <br>The app's efficiency truly.</h3>
+                    <h3>Since using PayPulse, I've experienced <br>hassle-free payments and instant <br>notifications. Its user-friendly <br>design makes financial. <br>Can't wait for the next one</h3>
+                    <h3>I rely on PayPulse daily. Its security <br>measures and convenient <br>features simplify <br>money transfers. <br>The app's efficiency truly.</h3>
+                    <h3>Since using PayPulse, I've experienced <br>hassle-free payments and instant <br>notifications. Its user-friendly <br>design makes financial. <br>Can't wait for the next one</h3>
+                </div>
+                <div class="testimonial-namePeople">
+                    <strong>Sanchier Rek</strong>
+                    <span>CEO, Growth Lead</span>
+                </div>
+                <div class="testimonial-carousel">
+                    <div class="ball ball-active"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                    <div class="ball"></div>
+                </div>
+            </div>
+            <div class="testimonial-contentRightPeople">
+                <img src="image/testmonialImg.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION FAQ -->
+    <section class="faq">
+        <div class="faq-container">
+            <h2>Frequently asked questions</h2>
+            <ul class="faq-accordionMenu">
+                <li class="faq-accordionItem">
+                    <div class="faq-accordionHeader">
+                        <strong>01. What is PayPulse?</strong>
+                        <div class="faq-accordionIcon">
+                            <img src="image/iconPlus.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="faq-accordionContent">
+                        <p>PayPulse is an online app that is used to Send your money to everywhere in the world in less than a minute!
+                        you can grab the app from play or apple store</p>
+                    </div>
+                </li>
+                <li class="faq-accordionItem">
+                    <div class="faq-accordionHeader">
+                        <strong>02. What can be done after joining PayPulse?</strong>
+                        <div class="faq-accordionIcon">
+                            <img src="image/iconPlus.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="faq-accordionContent">
+                        <p>PayPulse is an online app that is used to Send your money to everywhere in the world in less than a minute!
+                        you can grab the app from play or apple store</p>
+                    </div>
+                </li>
+                <li class="faq-accordionItem">
+                    <div class="faq-accordionHeader">
+                        <strong>03. What are the advantages of PayPulse over other online app providers?</strong>
+                        <div class="faq-accordionIcon">
+                            <img src="image/iconPlus.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="faq-accordionContent">
+                        <p>PayPulse is an online app that is used to Send your money to everywhere in the world in less than a minute!
+                        you can grab the app from play or apple store</p>
+                    </div>
+                </li>
+                <li class="faq-accordionItem">
+                    <div class="faq-accordionHeader">
+                        <strong>04. What are the specialities on PayPulse?</strong>
+                        <div class="faq-accordionIcon">
+                            <img src="image/iconPlus.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="faq-accordionContent">
+                        <p>PayPulse is an online app that is used to Send your money to everywhere in the world in less than a minute!
+                        you can grab the app from play or apple store</p>
+                    </div>
+                </li>
+                <li class="faq-accordionItem">
+                    <div class="faq-accordionHeader">
+                        <strong>05. How to download PayPulse?</strong>
+                        <div class="faq-accordionIcon">
+                            <img src="image/iconPlus.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="faq-accordionContent">
+                        <p>PayPulse is an online app that is used to Send your money to everywhere in the world in less than a minute!
+                        you can grab the app from play or apple store</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- SECTION BLOG -->
+    <section class="blog">
+        <div class="blog-container">
+            <h2>What does the Media says about us!</h2>
+            <p>We make it easy for users to use our platform, that's why we provide this benefit.</p>
+            <div class="blog-containerCards">
+                <article class="blog-card">
+                    <img src="image/blog-card-image-1.png" alt="Imagem de um celular">
+                    <strong>Undoubtedly, Best App for transfer money to anywhere - <span>The New York times</span></strong>
+                    <p>This app is only available in the US International payments transactions to and from different countries.... <a href="#">Read More</a></p>
+                </article>
+                <article class="blog-card">
+                    <img src="image/blog-card-image-2.png" alt="Imagem de um gostei com a mão">
+                    <strong>This app is very fast and secure to send money easily - <span>The Golden Hour</span></strong>
+                    <p>This app is only available in the US International payments transactions to and from different countries.... <a href="#">Read More</a></p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-retangle">
+                <div class="footer-retangleContent">
+                    <div class="footer-retangleContentLeft">
+                        <h2>Download now! A great app for Sending money</h2>
+                        <p>Send your money to everywhere in the world in less than a minute! Download the app now.</p>
+                    </div>
+                    <div class="footer-retangleContentRight">
+                        <a href="#">
+                            <img src="image/AppStore.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="image/PlayStore.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="image/logo.svg" alt="">
+                    <strong>PayPulse</strong>
+                </div>
+                <nav class="footer-navigation">
+                    <ul>
+                        <li>
+                            <a href="#">Features</a>
+                        </li>
+                        <li>
+                            <a href="#">Why Choose Us</a>
+                        </li>
+                        <li>
+                            <a href="#">Testimonial</a>
+                        </li>
+                        <li>
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="#">Nes</a>
+                        </li>
+                    </ul>
+                </nav>
+    
+                <div class="footer-copyright">
+                    <span>&copy; 2023 PayPulse inc. All right reserved</span>
+                    <div class="footer-links">
+                        <a href="#">Privacy Policy</a>
+                        <a href="#">Term & Condition</a>
+                    </div>
+                    <div class="footer-socialMediaLinks">
+                        <a href="#">
+                            <img src="image/iconFacebook.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="image/iconInstagram.svg" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="image/iconTwitter.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="js/revealText.js"></script>
+    <script src="js/accordionFAQ.js"></script>
+    <script src="js/menuMobile.js"></script>
+</body>
+</html>

@@ -1,0 +1,328 @@
+/* TABLET - 1024 */
+@media (max-width: 1024px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .header-bannerContentLeft h1 {
+    font-size: 5.3rem;
+  }
+
+  .about-containerCards {
+    position: relative;
+    left: 17%;
+  }
+
+  .about-cardInfosText {
+    grid-row: 1 / 1;
+    width: 88rem;
+    /* width: 134%; */
+  }
+
+  .about-cardSecure {
+    width: 88rem;
+  }
+
+  .about-cardPayment {
+    grid-column: 2 / 1;
+    width: 43rem;
+  }
+
+  .about-cardTansaction {
+    width: 43rem;
+    transform: translateX(-17rem);
+  }
+
+  .benefits-containerCards {
+    max-width: 88rem;
+    margin: 7.2rem auto;
+  }
+
+  .testimonial-contentRightPeople {
+    padding: 89rem 0 8rem 0;
+  }
+
+  .blog-containerCards > article.blog-card {
+    max-width: 43rem;
+  }
+
+  .blog-containerCards > article.blog-card img {
+    width: 100%;
+  }
+
+  .footer-retangle {
+    left: 3rem;
+    right: 3rem;
+  }
+
+  .footer-retangleContentLeft h2 {
+    line-height: 5rem;
+  }
+
+  .footer-retangleContentRight {
+    flex-direction: column;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 390px) {
+  :root {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .header-navigationMobile {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 7rem 2.4rem 0 0;
+    width: 39rem;
+    height: 100vh;
+    background-color: #fff;
+    left: 39rem;
+    transition: 300ms ease;
+  }
+
+  .header-navigationMobile.active {
+    left: 0;
+  }
+
+  .header-navigationMobile ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    align-items: flex-end;
+  }
+
+  .header-navigationMobile ul li a {
+    color: #1d1e25;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .closeMenu {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+
+  .closeMenu img {
+    width: 4rem;
+  }
+
+  .header-navbar > .header-menuIcon {
+    padding-inline-end: 2.4rem;
+  }
+
+  .header-logo {
+    padding-inline-start: 2.4rem;
+  }
+
+  .header-navigation {
+    display: none;
+  }
+
+  .header-bannerContentLeft {
+    max-width: 100%;
+    padding-inline-start: 1rem;
+  }
+
+  .header-bannerContentLeft h1 {
+    font-size: 5.6rem;
+  }
+
+  .header-bannerContentLeft h1 + p {
+    max-width: 32rem;
+  }
+
+  .header-bannerDownloadApp {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .header-bannerContentRight {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  .header-bannerContentRight img {
+    width: 29.7rem;
+    height: 57.3rem;
+    padding-top: 2.6rem;
+  }
+
+  .about-containerCards {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 1.6rem;
+  }
+
+  .about-cardPayment,
+  .about-cardInfosText,
+  .about-cardTansaction,
+  .about-cardSecure {
+    max-width: 34.2rem;
+    height: 50.4rem;
+    padding: 4.8rem 4rem !important;
+  }
+
+  .about-containerCards .cardIcon {
+    padding: 0;
+  }
+
+  .about-containerCards > article.about-cardTansaction {
+    position: relative;
+    left: 16.7rem;
+  }
+
+  .about-containerCards > .about-cardInfosText {
+    order: -1;
+    margin-bottom: 6rem;
+  }
+
+  .about-containerCards > .about-cardInfosText > .about-title h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  .features .vs {
+    top: 51rem;
+  }
+
+  .features-containerInfosApp {
+    max-width: 34.2rem;
+    margin: auto;
+    position: relative;
+    left: -1rem;
+  }
+
+  .features-containerTitle > .features-title {
+    font-size: 4rem;
+  }
+
+  .features-containerTitle .features-subtitle {
+    max-width: 34.2rem;
+  }
+
+  .cta-container {
+    flex-direction: column-reverse;
+  }
+
+  .cta-contentRightInfos {
+    max-width: 100%;
+    margin-bottom: 4.8rem;
+  }
+
+  .cta-contentRightInfos h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  .cta-contentLeft img {
+    width: 28.3rem;
+  }
+
+  .testimonial-contentLeftInfos {
+    padding: 0 2.4rem;
+  }
+
+  .testimonial-contentLeftInfos > .testimonial-namePeople {
+    margin-top: -8rem;
+  }
+
+  .testimonial-contentLeftInfos > .testimonial-carousel {
+    margin-top: -10rem;
+  }
+
+  .testimonial-contentRightPeople img {
+    width: 30.5rem;
+    height: 25.7rem;
+    position: relative;
+    left: -7rem;
+    display: inline-block;
+    margin-top: 4rem;
+  }
+
+  .testimonial-contentSlider > h3 {
+    font-size: 2rem;
+    line-height: 3.2rem;
+  }
+
+  .faq-container {
+    padding: 5.6rem 2.4rem;
+  }
+
+  .faq-accordionItem > .faq-accordionHeader {
+    gap: 1.6rem;
+  }
+
+  .blog-container {
+    max-width: 34.2rem;
+  }
+
+  .blog-container h2 {
+    font-size: 4rem;
+    line-height: 5.2rem;
+  }
+
+  .footer-retangleContent {
+    flex-direction: column;
+  }
+
+  .footer-retangle {
+    padding: 2.4rem;
+    left: 1.4rem;
+    right: 3rem;
+  }
+
+  .footer-retangleContent {
+    max-width: 27.4rem;
+    text-align: center;
+  }
+
+  .footer-retangleContentLeft h2 {
+    font-size: 3rem;
+    line-height: 4rem;
+  }
+
+  .footer-retangleContentRight {
+    margin-top: 4rem;
+  }
+
+  .footer-content {
+    margin-top: 28rem;
+  }
+
+  .footer-navigation ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-copyright {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer-links {
+    padding: 2rem 0;
+  }
+}
+
+/* MOBILE HIDDEN MENU */
+@media (min-width: 391px) {
+  .header-navbar > .header-menuIcon {
+    display: none;
+  }
+}
